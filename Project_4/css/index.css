@@ -228,19 +228,30 @@ span{
     width: 370px;
     height: 20px;
     margin: 9px;
+    margin-bottom: -8px;
     background-color: #FFFFFF;
 }
-.ui-box3-content-message{
+#ui-box3-content-message{
+    width: 370px;
+    height: 20px;  
+    background-color: #FFFFFF;
+}
+#ui-box3-content-Rmessage{
+	padding-left: 15px;
+	color: #F6336F;
 	font-size: 15px;
 	font-weight: bold;
-	padding-left: 5px;
 	line-height: 15px;
-	color: #F60740;
     width: 370px;
     height: 20px;
-    margin: 9px;
-    background-color: #FFFFFF;
-    margin-top: 0px;
+}
+.ui-box3-content-Bmessage{
+	color: #A2A49F;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 15px;
+    width: 370px;
+    height: 20px;
 }
 .ui-box3-content-item{
 	display: flex;
@@ -266,11 +277,12 @@ span{
 }
 #ui-box3-content-Pprice:before{
 	content: "¥";
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
+    color: #A2A49F;
 }
 #ui-box3-content-Pprice{
-	color: #575757;
+	color: #A2A49F;
 	font-size: 10px;
 	text-decoration: line-through;
 	padding-top: 12px;
@@ -286,7 +298,7 @@ span{
 	color: #F60740;
 }
 #ui-box3-content-text{
-	color: #575757;
+	color: #A2A49F;
 	font-size: 10px;
 	line-height: 20px;
 	padding-top: 12px;
