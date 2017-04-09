@@ -258,6 +258,7 @@ span{
     width: 370px;
     height: 30px;
     margin: 9px;
+    padding-top: 5px;
     background-color: #FFFFFF;
     margin-top: 0px;
     flex-wrap: wrap;
