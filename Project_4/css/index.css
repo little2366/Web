@@ -1,8 +1,8 @@
 h3{
-	font-family: 'Microsoft YaHei UI Light';
+	font-family: "MIcrosoft YaHei", Arial, Helvetica, sans-serif;
 }
 span{
-	font-family: 'Microsoft YaHei';
+	font-family: "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
 }
 #ui-box1{
 	display: flex;
@@ -152,23 +152,20 @@ span{
     margin-top: 0px;
     flex-wrap: wrap;
 }
-#ui-box2-content-Nprice:before{
-	content: "¥ ";
-    font-size: 15px;
-    font-weight: bold;
+#ui-box2-content-symbol{
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-top: 9px;
+	line-height: 15px;
+	color: #F60740;
 }
 #ui-box2-content-Nprice{
-    color: #575757;
 	font-size: 20px;
 	font-weight: bold;
 	padding-left: 8px;
 	line-height: 30px;
 	color: #F60740;
-}
-#ui-box2-content-Pprice:before{
-	content: "¥";
-    font-size: 8px;
-    font-weight: bold;
 }
 #ui-box2-content-Pprice{
 	color: #575757;
@@ -263,24 +260,20 @@ span{
     margin-top: 0px;
     flex-wrap: wrap;
 }
-#ui-box3-content-Nprice:before{
-	content: "¥ ";
-    font-size: 18px;
-    font-weight: bold;
+#ui-box3-content-symbol{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 8px;
+	line-height: 20px;
+	padding-top: 8px;
+	color: #F60740;
 }
 #ui-box3-content-Nprice{
-    color: #575757;
 	font-size: 30px;
 	font-weight: bold;
 	padding-left: 8px;
 	line-height: 30px;
 	color: #F60740;
-}
-#ui-box3-content-Pprice:before{
-	content: "¥";
-    font-size: 10px;
-    font-weight: bold;
-    color: #A2A49F;
 }
 #ui-box3-content-Pprice{
 	color: #A2A49F;
