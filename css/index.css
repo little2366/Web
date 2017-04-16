@@ -83,7 +83,7 @@ html,body{
 }
 .bio-text-3{
 	margin-top:60px;
-	width: 544px;
+	width: 441px;
 	-webkit-animation:bio-text-in .3s ease-out 1.2s 1 forwards;
 	-moz-animation:bio-text-in .3s ease-out 1.2s 1 forwards;
 }
