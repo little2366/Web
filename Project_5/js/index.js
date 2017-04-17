@@ -39,17 +39,31 @@ $(document).ready(function() {
         console.log(num);
     }
 
-    function deleteData(){
-    	num--;
-    	$(this).parent().remove();
-    	if(num<1){
-			$("#ui-nolist").show();
-		}
-    	console.log(num);
+     function deleteData(){
+        /*num--;
+        $(this).parent().remove();
+        if(num<1){
+            $("#ui-nolist").show();
+        }
+        console.log(num);
         for (var i=0;i<num;i++) {
             $(".ui-list").eq(i).children("div.ui-list-index").text(i+1);
         }
-        $("#ui-data").children("div .ui-list").unbind("click",deleteData);
+        $("#ui-data").children("div .ui-list").unbind("click",deleteData);*/
+        
+        //修改源代码为动态的可视删除效果
+        num--;
+        $("#ui-data").css("margin-top","15px");
+        $(this).parent().hide(function(){
+            $(this).remove();
+            if(num==0){
+                $("#ui-nolist").show();
+            }
+            console.log(num);
+            for (var i=0;i<num;i++) {
+                $(".ui-list-index").eq(i).text(i+1);
+            }
+        });
     }
 });
     

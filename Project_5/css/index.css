@@ -77,13 +77,12 @@ ul{
 }
 #ui-data{
 	min-height: 245px;
-	margin-top: 15px;
 }
 .ui-list{
 	width: 400px;
 	height: 30px;
 	border: 2px solid #7F7F7F;
-	margin-bottom: 15px;
+	margin-top: 15px;
 	margin-left: 23px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -130,7 +129,6 @@ button{
 	height: 30px;
 	border: 2px solid #7F7F7F;
 	margin-top: 15px;
-	margin-bottom: 15px;
 	margin-left: 23px;
 	text-align: center;
 	line-height: 30px;
