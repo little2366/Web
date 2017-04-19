@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>jQuery</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel='icon' href='img/jQuery.ico' type=‘image/x-ico’ />
+</head>
+<body>
+    <div id="ui-show">
+	    <h3>1.点击图片列表中的某个元素，该图片放大显示.</h3>
+	    <div id="ui-container1">
+	    	<div class="ui-item"><img src="img/1.jpg"></div>
+	    	<div class="ui-item"><img src="img/2.jpg"></div>
+	    	<div class="ui-item"><img src="img/3.jpg"></div>
+	    	<div class="ui-item"><img src="img/4.jpg"></div>
+	    	<div class="ui-item"><img src="img/5.jpg"></div>
+	    	<div class="ui-item"><img src="img/6.jpg"></div>
+	    	<div class="ui-item"><img src="img/7.jpg"></div>
+	    	<div class="ui-item"><img src="img/8.jpg"></div>
+	    	<div class="ui-item"><img src="img/9.jpg"></div>
+	    	<div class="ui-item"><img src="img/10.jpg"></div>
+	    </div><br>
+
+	    <h3>2.页面的滑动门技术，即点击上方导航按钮，将按钮背景颜色设置为灰色，并且切换下方内容.</h3>
+	    <div id="ui-container2">
+	    	<ul>
+	    		<li class="ui-li-left" value="1"></li>
+	    		<li class="ui-li-noleft" value="2"></li>
+	    		<li class="ui-li-noleft" value="3"></li>
+	    	</ul>
+	    	<br>
+	    	<div id="ui-content">1</div>
+	    </div><br>
+
+	    <h3>3.数据管理操作</h3>
+	    <div id="ui-container3">
+	        <div id="ui-data">
+	            <div id="ui-nolist">
+	            	<span>当前没有数据哦</span>
+	            </div>
+		    	<div class="ui-list" id="ui-list-item">
+	    			<div class="ui-list-common ui-list-index">1</div>
+	    			<div class="ui-list-common ui-list-blank"></div>
+	    			<div class="ui-list-common ui-list-delete">Delete</div>
+		    	</div>
+		    	<div class="ui-list">
+	    			<div class="ui-list-common ui-list-index">2</div>
+	    			<div class="ui-list-common ui-list-blank"></div>
+	    			<div class="ui-list-common ui-list-delete">Delete</div>
+		    	</div>
+		    	<div class="ui-list">
+	    			<div class="ui-list-common ui-list-index">3</div>
+	    			<div class="ui-list-common ui-list-blank"></div>
+	    			<div class="ui-list-common ui-list-delete">Delete</div>
+		    	</div>
+            </div>
+            <div id="ui-button">
+            	<button>添加</button>
+            </div> 
+	    </div>
+        
+    </div>
+    <div id="ui-hide">
+	    <div id="ui-hide-item">
+	        <img id="ui-hide-img" src="">
+	    </div>
+	</div>
+</body>
+<script src="lib/jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
