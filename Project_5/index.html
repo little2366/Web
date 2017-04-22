@@ -2,71 +2,130 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>jQuery</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel='icon' href='img/jQuery.ico' type=‘image/x-ico’ />
+    <title>grid</title>
+    <link rel='icon' href='img/grid.ico' type=‘image/x-ico’ /> 
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="ui-show">
-	    <h3>1.点击图片列表中的某个元素，该图片放大显示.</h3>
-	    <div id="ui-container1">
-	    	<div class="ui-item"><img src="img/1.jpg"></div>
-	    	<div class="ui-item"><img src="img/2.jpg"></div>
-	    	<div class="ui-item"><img src="img/3.jpg"></div>
-	    	<div class="ui-item"><img src="img/4.jpg"></div>
-	    	<div class="ui-item"><img src="img/5.jpg"></div>
-	    	<div class="ui-item"><img src="img/6.jpg"></div>
-	    	<div class="ui-item"><img src="img/7.jpg"></div>
-	    	<div class="ui-item"><img src="img/8.jpg"></div>
-	    	<div class="ui-item"><img src="img/9.jpg"></div>
-	    	<div class="ui-item"><img src="img/10.jpg"></div>
-	    </div><br>
-
-	    <h3>2.页面的滑动门技术，即点击上方导航按钮，将按钮背景颜色设置为灰色，并且切换下方内容.</h3>
-	    <div id="ui-container2">
-	    	<ul>
-	    		<li class="ui-li-left" value="1"></li>
-	    		<li class="ui-li-noleft" value="2"></li>
-	    		<li class="ui-li-noleft" value="3"></li>
-	    	</ul>
-	    	<br>
-	    	<div id="ui-content">1</div>
-	    </div><br>
-
-	    <h3>3.数据管理操作</h3>
-	    <div id="ui-container3">
-	        <div id="ui-data">
-	            <div id="ui-nolist">
-	            	<span>当前没有数据哦</span>
-	            </div>
-		    	<div class="ui-list" id="ui-list-item">
-	    			<div class="ui-list-common ui-list-index">1</div>
-	    			<div class="ui-list-common ui-list-blank"></div>
-	    			<div class="ui-list-common ui-list-delete">Delete</div>
-		    	</div>
-		    	<div class="ui-list">
-	    			<div class="ui-list-common ui-list-index">2</div>
-	    			<div class="ui-list-common ui-list-blank"></div>
-	    			<div class="ui-list-common ui-list-delete">Delete</div>
-		    	</div>
-		    	<div class="ui-list">
-	    			<div class="ui-list-common ui-list-index">3</div>
-	    			<div class="ui-list-common ui-list-blank"></div>
-	    			<div class="ui-list-common ui-list-delete">Delete</div>
-		    	</div>
-            </div>
-            <div id="ui-button">
-            	<button>添加</button>
-            </div> 
-	    </div>
-        
+    
+    <h3>实现日本列车的时刻表应用版面布局，要求通过矢量字体实现图标，使用flex或Alice实现布局</h3>
+    <div id="ui-container1">
+        <div id="ui-route"><span>经路 1</span></div>
+        <div id="ui-time"><span>早</span></div>
+        <div id="ui-strip"></div>
+        <div class="ui-container1-common ui-message">
+            <span class="ui-message-pattern1 ui-message-item1">08:43</span>
+            <span class="ui-message-pattern2">発</span>
+            <span class="ui-message-pattern1"> → </span>
+            <span class="ui-message-pattern1">09:43</span>
+            <span class="ui-message-pattern2">着</span>
+            <span class="ui-message-pattern3 ui-message-item2">総額</span>
+            <span class="ui-message-pattern4">6,560円</span><br>
+            <span class="ui-message-pattern3 ui-message-item1">所要时间</span>
+            <span class="ui-message-pattern4">1時間0分</span>
+            <span class="ui-message-pattern3 ui-message-item2">乘车时间</span>
+            <span class="ui-message-pattern5">54分</span>
+            <span class="ui-message-pattern3 ui-message-item2">乗換</span>
+            <span class="ui-message-pattern4">1回</span>
+            <span class="ui-message-pattern3 ui-message-item2">距离</span>
+            <span class="ui-message-pattern5">190.4km</span>
+        </div>
+        <div class="ui-container1-common ui-toolbar">
+            <img id="ui-toolbar-img1" src="img/print.png">
+            <!--<i id="ui-toolbar-img1" class="fa fa-print"></i>-->
+            <div class="ui-toolbar-text"><span>打印</span></div>
+            <img id="ui-toolbar-img2" src="img/recipt.png">
+            <!--<i id="ui-toolbar-img2" class="fa fa-file-text-o"></i>-->
+            <div class="ui-toolbar-text"><span>详单</span></div>
+        </div>
     </div>
-    <div id="ui-hide">
-	    <div id="ui-hide-item">
-	        <img id="ui-hide-img" src="">
-	    </div>
-	</div>
+    <div id="ui-container2">
+        <div class="ui-container2-commom ui-title1"><span>经路</span></div>
+        <div class="ui-container2-commom ui-title2"><span>乘车位置</span></div>
+        <div class="ui-container2-commom ui-title3"><span>费用</span></div>
+        <div class="ui-container2-commom ui-title4"><span>指定席/费用</span></div>
+        <div class="ui-container2-commom ui-title5">距离</div>
+        <div class="ui-block">
+            <img id="ui-block-img1" src="img/cloud.png">
+            <img id="ui-block-img2" src="img/square.png">
+            <!--<i id="ui-block-img1" class="fa fa-cloud"></i>
+            <i id="ui-block-img2" class="fa fa-square"></i>-->
+            <span class="ui-block-text1">名古屋</span>
+            <span class="ui-block-text2">17番線発</span>
+            <span class="ui-block-text3">时刻表</span>
+            <span class="ui-block-text4">车站图</span>
+            <span class="ui-block-text4">线路图</span>
+            <span class="ui-block-text4">地图</span>
+        </div>
+    </div>
+    <div id="ui-container3">
+        <div class="ui-container3-item1">
+            <div class="ui-item1-text1">
+                <div id="ui-item1-text1-wrap1"><span>08:43-09:33</span></div>
+                <div id="ui-item1-text1-wrap2"><span>50分</span></div>
+            </div>
+            <div class="ui-item1-bar"></div>
+            <div id="ui-item1-right"">
+                <img src="img/sign1.png">
+                <!--<i class="fa fa-train"></i>-->
+                <div class="ui-item1-type1">新</div>
+                <div class="ui-item1-text"><span>のぞみ203号(新大阪行)</span></div>
+            </div>
+        </div>
+        <div class="ui-container3-item2"></div>
+        <div class="ui-container3-item3"><span>3,350円</span></div>
+        <div class="ui-container3-item4">
+            <div id="ui-container3-item4-wrap1"><span>指定席</span></div>
+            <div id="ui-container3-item4-wrap2"><span>3,210円</span></div>
+        </div>
+        <div class="ui-container3-item5"><span>186.6km</span></div>
+    </div>
+    <div id="ui-container4" class="ui-block">
+            <span class="ui-block-text0">（6分）</span>
+            <img id="ui-block-img3" src="img/smallSquare.png">
+            <!--<i id="ui-block-img3" class="fa fa-square"></i>-->
+            <span class="ui-block-text1">新大阪</span>
+            <div class="ui-block-text2">
+                <div id="ui-block-text2-wrap1"><span>23番線着</span></div>
+                <div id="ui-block-text2-wrap2"><span>16番線発</span></div>
+            </div>
+            <div id="ui-block-text34">
+                <span class="ui-block-text3">时刻表</span>
+                <span class="ui-block-text4">车站图</span>
+                <span class="ui-block-text4">线路图</span>
+                <span class="ui-block-text4">地图</span>
+            </div>
+    </div>
+    <div id="ui-container5">
+        <div class="ui-container3-item1">
+            <div class="ui-item1-text1">
+                <div id="ui-item1-text1-wrap1"><span>09:39-09:43</span></div>
+                <div id="ui-item1-text1-wrap2"><span>4分</span></div>
+            </div>
+            <div class="ui-item1-bar1"></div>
+            <div id="ui-item1-right"">
+                <img src="img/sign2.png">
+                <!--<i class="fa fa-train"></i>-->
+                <div class="ui-item1-type2">JR</div>
+                <div class="ui-item1-nounderline"><span>ＪＲ京都線新快速(姫路行)</span></div>
+            </div>
+        </div>
+        <div class="ui-container3-item2"></div>
+        <div class="ui-container3-item3"><span>↓</span></div>
+        <div class="ui-container3-item4"></div>
+        <div class="ui-container3-item5"><span>3.8km</span></div>
+    </div>
+    <div id="ui-container4" class="ui-block">
+            <img id="ui-block-img1" src="img/cloud.png">
+            <img id="ui-block-img2" src="img/square.png">
+            <!--<i id="ui-block-img1" class="fa fa-cloud"></i>
+            <i id="ui-block-img2" class="fa fa-square"></i>-->
+            <span class="ui-block-text1">大阪</span>
+            <span class="ui-block-text5">5番線着</span>
+            <span class="ui-block-text6">车站图</span>
+            <span class="ui-block-text4">线路图</span>
+            <span class="ui-block-text4">地图</span>
+    </div>
 </body>
-<script src="lib/jQuery/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 </html>

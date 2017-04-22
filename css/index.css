@@ -32,13 +32,13 @@ html,body{
 }
 .left{
 	position:absolute;
-	top:60%;
-	left:20%;
+	top:66%;
+	left:22%;
 	z-index:0;
 }
 .right{
 	position:absolute;
-	top:60%;
+	top:66%;
 	left:70%;
 	z-index:0;
 }
@@ -102,7 +102,7 @@ html,body{
 	-moz-animation:bio-text-in .3s ease-out 1.2s 1 forwards;
 }
 @-webkit-keyframes 'bio-text-in' {
-	0% {-webkit-transform:translate(649px,0);opacity:0;}
+	0% {-webkit-transform:translate(100px,0);opacity:0;}
 	100% {-webkit-transform:translate(0,0);opacity:1;}
 }
 @-webkit-keyframes 'bio-icon-in2' {
