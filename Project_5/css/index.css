@@ -27,6 +27,7 @@ span{
 	border-radius: 3px;
 	color: #ffffff;
 	margin-left: 6px;
+	padding-left: 2px;
 	background: linear-gradient(#FB7A12, #FF4002); 
 }
 #ui-strip{
@@ -83,8 +84,10 @@ span{
 	margin-left: 3px;
 }
 #ui-toolbar-img1{
+	margin-top: 4px;
     margin-left: 578px;
-    height:19px;
+    margin-right: 3px;
+    font-size: 15px;
 }
 .ui-toolbar-text{
 	color:rgb(0,44,189);
@@ -93,8 +96,10 @@ span{
 	text-decoration: underline;
 }
 #ui-toolbar-img2{
+	margin-top: 5px;
     margin-left: 10px;
-    height:20px;
+    margin-right: 3px;
+    font-size: 13px;
 }
 #ui-container2{
 	width: 688px;
@@ -141,10 +146,17 @@ span{
 #ui-block-img1{
 	margin-top:9px;
 	margin-left: 75px;
+	font-size: 13px;
+	color: #ffffff;
+	-webkit-text-stroke: 1px rgb(41,159,238);  
 }
 #ui-block-img2{
 	margin-top: 10px;
 	margin-left: -2px;
+	font-size: 15px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 50%, from(rgb(41,159,238)), to(#0D7DD0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .ui-block-text0{
 	font-size: 13px;
@@ -241,7 +253,10 @@ span{
 	border-top: 1px solid #BBBBBB;
 }
 #ui-block-img3{
-	margin-left: 28px;
+	margin-left: 27px;
+	font-size: 4px;
+	-webkit-text-stroke: 2px rgb(41,159,238);  
+	color: #ffffff;
 }
 .ui-block-text5{
 	font-size: 13px;
@@ -272,17 +287,27 @@ span{
 	margin-left: 115px;
 	margin-top: -30px;
 }
+.ui-item1-fa{
+	color: #0096F9;
+	margin-top: -6px;
+	margin-left: 6px;
+}
+.ui-item1-fa1{
+	color: rgb(0,126,84);
+	margin-top: -6px;
+	margin-left: 6px;
+}
 .ui-item1-text{
-	color: #0069a3;
+	color: #0069A3;
 	font-size: 13px;
-	margin-left: 50px;
-	margin-top: -19px;
+	margin-left: 47px;
+	margin-top: -18px;
 	text-decoration: underline;
 }
 .ui-item1-nounderline{
-	color: #0069a3;
+	color: #0069A3;
 	font-size: 13px;
-	margin-left: 50px;
+	margin-left: 48px;
 	margin-top: -18px;
 }
 .ui-item1-bar1{
@@ -297,13 +322,13 @@ span{
 	color: rgb(41,159,238);
 	font-size: 13px;
 	font-weight: bold;
-	margin-left: 30px;
-	margin-top: -25px;
+	margin-left: 25px;
+	margin-top: -20px;
 }
 .ui-item1-type2{
 	color: rgb(0,126,84);
 	font-size: 13px;
 	font-weight: bold;
-	margin-left: 30px;
-	margin-top: -23px;
+	margin-left: 25px;
+	margin-top: -20px;
 }
